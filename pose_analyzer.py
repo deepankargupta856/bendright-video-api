@@ -206,11 +206,11 @@ def analyze_pose(pose_name: str, landmarks):
     """
     Dispatcher function to call the correct pose analysis.
     """
-    if pose_name == "warrior_2":
+    if pose_name == "warrior-ii":
         return check_warrior_2_pose(landmarks)
-    elif pose_name == "tree_pose":
+    elif pose_name == "tree-pose":
         return check_tree_pose(landmarks)
-    elif pose_name == "downward_dog":
+    elif pose_name == "downward-dog":
         return check_downward_dog_pose(landmarks)
     else:
         return 0, ["Selected pose is not supported"]
